@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="bg-inicio1">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <meta http-equiv="cache-control" content="Public"/>
+ <meta http-equiv="Pragma" content="Public"/>
+ <title>Produto Alerta</title>
+ <link rel="stylesheet" href="css/bootstrap.css">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/effects.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section id="header" class="container-fluid">
+ <div class="header-color row">
+ <img src="image/arrow.png" class="arrow img-responsive pull-left" alt=""> 
+ <img src="image/logobranco.png" class="logo-branco center-block" alt="">
+ <a id="trigger-overlay" class="pull-right" href="#"><span></span></a>
+ <a class="pull-right overlay-close" href="#"><span></span></a>
+ </div>
+</section>
+
+    <div class="overlay overlay-hugeinc">
+      <nav>
+        <div class="container">
+
+          <h1 class="menu-h1 text-center"><br>Menu</h1>
+          
+            <div class="row">
+              
+              <div class="col-xs-6">
+                
+                  <a href=""><img src="image/menu1.png" class="img-responsive" alt=""></a>
+
+              </div>
+              <div class="col-xs-6">
+                
+                  <a href=""><img src="image/menu2.png" class="img-responsive" alt=""></a>
+
+              </div>
+              
+            </div>
+
+             <div class="row">
+              
+              <div class="col-xs-6">
+                
+                  <a href=""><img src="image/menu3.png" class="img-responsive" alt=""></a>
+
+              </div>
+              <div class="col-xs-6">
+                
+                  <a href=""><img src="image/menu4.png" class="img-responsive" alt=""></a>
+
+              </div>
+              
+            </div>
+
+            </div>
+<section id="entre container">
+ <div class="duvidas text-center">
+  <br><a href="" class="text-center">DÛVIDAS?</a><br><br>
+ </div>
+</section>
+        </div>
+      </nav>
+
+
+<div class="bula-img text-center">
+  <img src="image/alerta.png" alt="">
+</div>
+
+<div class="bula-txt text-center">
+  <h1>PRODUTO</h1>
+</div>
+
+<section class="section-bula">
+<div class="form-group">
+      <label class="sr-only" for="form-username">Procurar</label>
+         <input type="text" name="inicio-remedio" placeholder="Inicio" data-mask="00/00/0000"class="form-procurar3 form-control transparent" id="inicio-remedio" required>
+        </div>
+        <div class="form-group">
+      <label class="sr-only" for="form-username">Procurar</label>
+         <input type="text" name="inicio-remedio" placeholder="Fim" data-mask="00/00/0000"class="form-procurar3 form-control transparent" id="fim-remedio" required>
+        </div>
+      <div class="col-sm-12">
+        <label class="label-switch switch-primary">
+          <input type="checkbox" class="switch switch-bootstrap status transparent" name="status" id="status" value="1" checked="checked">
+          <span class="lable"></span>
+        </label>  
+        <textarea name="capsula-lq" id="capsula-lq" cols="1" rows="1" maxlength="5"></textarea>
+     </div>
+
+    <div class="form-group">
+      <label class="sr-only" for="form-username">Posologia</label>
+         <input type="text" name="posologia" placeholder="Ciclo" data-mask="00:00:00" class="form-procurar3 form-control transparent" id="posologia" required>
+        </div>
+</section>
+
+<section class="salvar-alerta">
+
+<div id="entre container">
+     <div class="salvar-alerta text-center">
+      <a href="" class="text-center">SALVAR ALERTA</a>
+     </div>
+    </div>
+
+    <div id="entre container">
+     <div class="btn-mais2 text-center">
+      <a href="" class="text-center"  style="background-color:transparent!important;">+</a>
+     </div>
+  
+
+</section>
+
+
+    <div class="navbar navbar-fixed-bottom">
+      <nav>
+        <div class="container">
+
+          
+            <div class="row menu-bottom">
+              
+              <div class="col-xs-4">
+                
+                  <a href=""><img src="image/menu2.png" class="img-responsive" alt=""></a>
+
+              </div>
+              <div class="col-xs-4">
+                
+                  <a href=""><img src="image/menu3.png" class="img-responsive" alt=""></a>
+
+              </div>
+              
+              <div class="col-xs-4">
+                
+                  <a href=""><img src="image/menu4.png" class="img-responsive" alt=""></a>
+
+              </div>
+            </div>
+
+          
+
+            </div>
+
+        </div>
+
+
+    </div>
+    
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
+
+<script src="js/jquery.mask.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/effects.js"></script>
+    <script> 
+    document.querySelector( "#trigger-overlay , #fim-remedio" )
+  .addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });</script>
+    <!-- For the demo ad only -->   
+
+<script>
+    $(document).ready(function () {
+        $("#inicio-remedio , #fim-remedio").datepicker({
+            format: "dd/mm/yyyy",
+            language: 'pt-BR',
+            locale: "pt-BR"
+     });
+    });
+</script>
+
+<script src="js/new.js"></script>
+
+<script>
+  $("#horario-dispo").mask('00:00:00');
+</script>
+
+
+
+  
+</body>
+</html>
+
+
